@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p style="color: cadetblue;">Click the button to evaluate/execute JavaScript code/expressions-</p>
+    <button onclick="myFunction()" style="color:darkseagreen;">Try it...</button>
+    <p id="result"></p>
+
+    <script>
+        function myFunction() {
+            var x = 4;
+            var y = 3;
+            var a = eval(x + y) + "<br>";
+            var b = eval(2 * 7) + "<br>";
+            var c = eval(x - y) + "<br>";
+            //The eval() in Javascript is used to evaluate or execute a string as JavaScript code
+            var res = a + b + c; //concatenates the string
+            document.getElementById("result").innerHTML = res;
+        }
+    </script>
+</body>
+
+</html>
