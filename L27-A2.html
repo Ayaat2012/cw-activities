@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p>Multiply every number with 10: 7, 29, 3, 12, 31</p>
+    <p id="product_value"></p>
+
+    <script>
+        var numbers = [7, 29, 3, 12, 31];
+
+        function myFunction(num) {
+            return num * 10;
+        }
+        var newarray = numbers.map(myFunction);
+        //.map() goes through every element in number array. It applies myFunction to each element
+        document.getElementById("product_value").innerHTML = newarray;
+    </script>
+</body>
+</html>
