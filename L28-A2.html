@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>JaavaScript Error Handling</h2>
+    <p>This example demonstrates hoe to use <b>catch</b> to display an error</p>
+    <p id="error_message"></p>
+
+    <script>
+        try {
+            addalert ("Welcom Guest!"); //But addalert is not a defined function -- this will throw a ReferanceError
+        }
+        catch (err) {
+            document.getElementById("error_message").innerHTML = err.message;
+        }
+        //err is the error object
+    </script>
+</body>
+
+</html>
