@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Calculator</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href=" https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap " rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="style4.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>CALCULATOR</h1>
+            <div class="row">
+                <input type="result" name="result" class="result" id="result" value="" placeholder="Result" readonly>
+                <input type="button" value="+" onclick="setSCreenValue('+')">
+            </div>
+            <div class="row">
+               <input type="button" value="1" onclick="setSCreenValue('1')">
+               <input type="button" value="2" onclick="setSCreenValue('2')">
+               <input type="button" value="3" onclick="setSCreenValue('3')">
+               <input type="button" value="-" onclick="setSCreenValue('-')">
+            </div>
+            <div class="row">
+               <input type="button" value="4" onclick="setSCreenValue('4')">
+               <input type="button" value="5" onclick="setSCreenValue('5')">
+               <input type="button" value="5" onclick="setSCreenValue('5')">
+               <input type="button" value="x" onclick="setSCreenValue('*')">
+            </div>
+            <div class="row">
+               <input type="button" value="7" onclick="setSCreenValue('7')">
+               <input type="button" value="8" onclick="setSCreenValue('8')">
+               <input type="button" value="9" onclick="setSCreenValue('9')">
+               <input type="button" value="/" onclick="setSCreenValue('/')">
+            </div>
+            <div class="row">
+               <input type="button" value="%" onclick="setSCreenValue('%')">
+               <input type="button" value="0" onclick="setSCreenValue('0')">
+               <input type="button" value="." class="dot" onclick="setSCreenValue('.')">
+               <input type="button" value="=" onclick="calculateResult()">
+            </div>
+            <div class="row">
+               <input type="button" value="CLEAR" onclick="clearScreen()" id="clear" class="clear-button">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
