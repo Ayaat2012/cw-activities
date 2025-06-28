@@ -1,0 +1,9 @@
+/* Global Properties */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #252525;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
